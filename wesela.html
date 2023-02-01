@@ -34,13 +34,30 @@
 
         <section id="dolny">
             <h2>Ile będzie kosztować moje wesele?</h2>
-            Podaj liczbę gości: <input type="number"><br>
-            <input type="checkbox">Wesele z poprawinami?<br>
-            <input type="button" value="Oblicz koszt"> 
+            Podaj liczbę gości: <input type="number" id="liczba"><br>
+            <input type="checkbox" id="poprawiny">Wesele z poprawinami?<br><br>
+            <input type="button" value="Oblicz koszt" onclick="gowno()"> 
+            <p id="wynik"></p>
         </section>
 
         <footer>
             Stronę internetową opracował: <i>Patryk Jajdyk</i>
         </footer>
     </body>
+
+    <script language="JavaScript">
+        function gowno(){
+            var liczba = document.getElementById("liczba").value;
+            var cena;
+            var cena2;
+            cena = liczba * 100;
+            if(poprawiny.checked){
+                cena2 = (30*cena)/100;
+                cena = cena + cena2
+            }
+            wynik.innerHTML="Koszt Twojego wesela to: "+ cena + " złotych";
+        }
+
+    </script>
+
 </html>
