@@ -1,0 +1,43 @@
+#baner{
+    background-color: #1C59A7;
+    height: 80px;
+    text-align: center;
+    color: white;
+}
+#lewy{
+    float: left;
+    background-color: #3A70B5;
+    width: 33%;
+    height: 200px;
+}
+#srodek{
+    float: left;
+    background-color: #5A8AC8;
+    width: 33%;
+    height: 200px;
+}
+#prawy{
+    float: left;
+    background-color: #86ACDD;
+    width: 34%;
+    height: 200px;
+    text-align: center;
+}
+#dolny{
+    background-color:  #86ACDD;
+    text-align: center;
+    height: 300px;
+    clear: both;
+}
+footer{
+    background-color: #1C59A7;
+    color: white;
+}
+#regulamin{
+    background-color: yellow;
+    color: blue;
+    padding: 10px;
+}
+h1{
+    display: inline;
+}
